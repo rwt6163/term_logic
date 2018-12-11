@@ -1,0 +1,11 @@
+[workspace]
+description=
+author=
+projectn=3
+currentprojectindex=2
+[project0]
+filename=Main.fprj
+[project1]
+filename=Piano.fprj
+[project2]
+filename=record.fprj

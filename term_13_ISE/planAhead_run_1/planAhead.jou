@@ -1,0 +1,55 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7
+# Build 321239 by xbuild on Fri Sep 27 19:31:35 MDT 2013
+# Start of session at: Tue Dec 04 19:56:16 2018
+# Process ID: 2360
+# Log file: D:/term_13_ISE/planAhead_run_1/planAhead.log
+# Journal file: D:/term_13_ISE/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source D:/term_13_ISE/pa.fromHdl.tcl
+update_compile_order -fileset sim_1
+set_property package_pin "" [get_ports [list  {Inpp[7]}]]
+startgroup
+set_property package_pin K2 [get_ports {Inpp[0]}]
+endgroup
+startgroup
+set_property package_pin M3 [get_ports {Inpp[1]}]
+endgroup
+startgroup
+set_property package_pin K4 [get_ports {Inpp[7]}]
+endgroup
+startgroup
+set_property package_pin L3 [get_ports {Inpp[6]}]
+endgroup
+startgroup
+set_property package_pin M2 [get_ports {Inpp[5]}]
+endgroup
+startgroup
+set_property package_pin N1 [get_ports {Inpp[4]}]
+endgroup
+startgroup
+set_property package_pin N3 [get_ports {Inpp[3]}]
+endgroup
+startgroup
+set_property package_pin M1 [get_ports {Inpp[2]}]
+endgroup
+startgroup
+set_property package_pin AB16 [get_ports clk]
+endgroup
+startgroup
+set_property package_pin W15 [get_ports Piezo]
+endgroup
+startgroup
+set_property package_pin Y2 [get_ports RegistOne]
+endgroup
+startgroup
+set_property package_pin U4 [get_ports RegistTwo]
+endgroup
+startgroup
+set_property package_pin T4 [get_ports rst]
+endgroup
+startgroup
+set_property package_pin V1 [get_ports RW]
+endgroup
+save_constraints

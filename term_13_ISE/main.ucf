@@ -1,0 +1,20 @@
+
+# PlanAhead Generated physical constraints 
+
+NET "Inpp[0]" LOC = K2;
+NET "Inpp[1]" LOC = M3;
+NET "Inpp[7]" LOC = K4;
+NET "Inpp[6]" LOC = L3;
+NET "Inpp[5]" LOC = M2;
+NET "Inpp[4]" LOC = N1;
+NET "Inpp[3]" LOC = N3;
+NET "Inpp[2]" LOC = M1;
+NET "clk" LOC = AB16;
+NET "Piezo" LOC = W15;
+NET "RegistOne" LOC = Y2;
+NET "RegistTwo" LOC = U4;
+NET "rst" LOC = T4;
+NET "RW" LOC = V1;
+
+
+NET "clk" CLOCK_DEDICATED_ROUTE = FALSE;

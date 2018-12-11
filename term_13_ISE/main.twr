@@ -1,0 +1,288 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\trce.exe -intstyle ise -v 3 -s 3 -n
+3 -fastpaths -xml main.twx main.ncd -o main.twr main.pcf -ucf main.ucf
+
+Design file:              main.ncd
+Physical constraint file: main.pcf
+Device,package,speed:     xc6slx45,fgg484,C,-3 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock Inpp<0>
+------------+------------+------------+------------+------------+------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+------------+------------+------------+------------+------------+------------------+--------+
+RW          |    0.169(R)|      SLOW  |    4.275(R)|      SLOW  |s2/s170/w16       |   0.000|
+RegistOne   |   -0.919(R)|      FAST  |    2.546(R)|      SLOW  |s2/s170/w16       |   0.000|
+RegistTwo   |    0.624(R)|      SLOW  |    1.034(R)|      SLOW  |s2/s170/w16       |   0.000|
+rst         |    0.547(R)|      SLOW  |    3.108(R)|      SLOW  |s2/s170/w16       |   0.000|
+------------+------------+------------+------------+------------+------------------+--------+
+
+Setup/Hold to clock Inpp<1>
+------------+------------+------------+------------+------------+------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+------------+------------+------------+------------+------------+------------------+--------+
+RW          |   -0.023(R)|      SLOW  |    4.478(R)|      SLOW  |s2/s170/w16       |   0.000|
+RegistOne   |   -1.064(R)|      FAST  |    2.749(R)|      SLOW  |s2/s170/w16       |   0.000|
+RegistTwo   |    0.432(R)|      SLOW  |    1.237(R)|      SLOW  |s2/s170/w16       |   0.000|
+rst         |    0.355(R)|      SLOW  |    3.311(R)|      SLOW  |s2/s170/w16       |   0.000|
+------------+------------+------------+------------+------------+------------------+--------+
+
+Setup/Hold to clock Inpp<2>
+------------+------------+------------+------------+------------+------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+------------+------------+------------+------------+------------+------------------+--------+
+RW          |    0.414(R)|      SLOW  |    4.014(R)|      SLOW  |s2/s170/w16       |   0.000|
+RegistOne   |   -0.751(R)|      SLOW  |    2.285(R)|      SLOW  |s2/s170/w16       |   0.000|
+RegistTwo   |    0.869(R)|      SLOW  |    0.773(R)|      SLOW  |s2/s170/w16       |   0.000|
+rst         |    0.792(R)|      SLOW  |    2.847(R)|      SLOW  |s2/s170/w16       |   0.000|
+------------+------------+------------+------------+------------+------------------+--------+
+
+Setup/Hold to clock Inpp<3>
+------------+------------+------------+------------+------------+------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+------------+------------+------------+------------+------------+------------------+--------+
+RW          |    1.418(R)|      SLOW  |    2.949(R)|      SLOW  |s2/s170/w16       |   0.000|
+RegistOne   |    0.253(R)|      SLOW  |    1.220(R)|      SLOW  |s2/s170/w16       |   0.000|
+RegistTwo   |    1.873(R)|      SLOW  |   -0.292(R)|      SLOW  |s2/s170/w16       |   0.000|
+rst         |    1.796(R)|      SLOW  |    1.782(R)|      SLOW  |s2/s170/w16       |   0.000|
+------------+------------+------------+------------+------------+------------------+--------+
+
+Setup/Hold to clock Inpp<4>
+------------+------------+------------+------------+------------+------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+------------+------------+------------+------------+------------+------------------+--------+
+RW          |    1.615(R)|      SLOW  |    2.738(R)|      SLOW  |s2/s170/w16       |   0.000|
+RegistOne   |    0.450(R)|      SLOW  |    1.009(R)|      SLOW  |s2/s170/w16       |   0.000|
+RegistTwo   |    2.070(R)|      SLOW  |   -0.462(R)|      FAST  |s2/s170/w16       |   0.000|
+rst         |    1.993(R)|      SLOW  |    1.571(R)|      SLOW  |s2/s170/w16       |   0.000|
+------------+------------+------------+------------+------------+------------------+--------+
+
+Setup/Hold to clock Inpp<5>
+------------+------------+------------+------------+------------+------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+------------+------------+------------+------------+------------+------------------+--------+
+RW          |    1.054(R)|      SLOW  |    3.345(R)|      SLOW  |s2/s170/w16       |   0.000|
+RegistOne   |   -0.111(R)|      SLOW  |    1.616(R)|      SLOW  |s2/s170/w16       |   0.000|
+RegistTwo   |    1.509(R)|      SLOW  |    0.104(R)|      SLOW  |s2/s170/w16       |   0.000|
+rst         |    1.432(R)|      SLOW  |    2.178(R)|      SLOW  |s2/s170/w16       |   0.000|
+------------+------------+------------+------------+------------+------------------+--------+
+
+Setup/Hold to clock Inpp<6>
+------------+------------+------------+------------+------------+------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+------------+------------+------------+------------+------------+------------------+--------+
+RW          |    0.582(R)|      SLOW  |    3.833(R)|      SLOW  |s2/s170/w16       |   0.000|
+RegistOne   |   -0.583(R)|      SLOW  |    2.104(R)|      SLOW  |s2/s170/w16       |   0.000|
+RegistTwo   |    1.037(R)|      SLOW  |    0.592(R)|      SLOW  |s2/s170/w16       |   0.000|
+rst         |    0.960(R)|      SLOW  |    2.666(R)|      SLOW  |s2/s170/w16       |   0.000|
+------------+------------+------------+------------+------------+------------------+--------+
+
+Setup/Hold to clock Inpp<7>
+------------+------------+------------+------------+------------+------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+------------+------------+------------+------------+------------+------------------+--------+
+RW          |    0.664(R)|      SLOW  |    3.746(R)|      SLOW  |s2/s170/w16       |   0.000|
+RegistOne   |   -0.501(R)|      SLOW  |    2.017(R)|      SLOW  |s2/s170/w16       |   0.000|
+RegistTwo   |    1.119(R)|      SLOW  |    0.505(R)|      SLOW  |s2/s170/w16       |   0.000|
+rst         |    1.042(R)|      SLOW  |    2.579(R)|      SLOW  |s2/s170/w16       |   0.000|
+------------+------------+------------+------------+------------+------------------+--------+
+
+Setup/Hold to clock clk
+------------+------------+------------+------------+------------+------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+------------+------------+------------+------------+------------+------------------+--------+
+RW          |   10.722(R)|      SLOW  |    4.383(R)|      SLOW  |clk_BUFGP         |   0.000|
+RegistOne   |    9.190(R)|      SLOW  |    2.474(R)|      SLOW  |clk_BUFGP         |   0.000|
+RegistTwo   |   11.247(R)|      SLOW  |    3.333(R)|      SLOW  |clk_BUFGP         |   0.000|
+rst         |    6.081(R)|      SLOW  |    3.562(R)|      SLOW  |clk_BUFGP         |   0.000|
+------------+------------+------------+------------+------------+------------------+--------+
+
+Clock clk to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+Piezo       |        15.861(R)|      SLOW  |         8.079(R)|      FAST  |clk_BUFGP         |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock to Setup on destination clock Inpp<0>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+Inpp<0>        |    2.856|         |         |         |
+Inpp<1>        |    2.856|         |         |         |
+Inpp<2>        |    2.856|         |         |         |
+Inpp<3>        |    2.856|         |         |         |
+Inpp<4>        |    2.856|         |         |         |
+Inpp<5>        |    2.856|         |         |         |
+Inpp<6>        |    2.856|         |         |         |
+Inpp<7>        |    2.856|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock Inpp<1>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+Inpp<0>        |    2.856|         |         |         |
+Inpp<1>        |    2.856|         |         |         |
+Inpp<2>        |    2.856|         |         |         |
+Inpp<3>        |    2.856|         |         |         |
+Inpp<4>        |    2.856|         |         |         |
+Inpp<5>        |    2.856|         |         |         |
+Inpp<6>        |    2.856|         |         |         |
+Inpp<7>        |    2.856|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock Inpp<2>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+Inpp<0>        |    2.856|         |         |         |
+Inpp<1>        |    2.856|         |         |         |
+Inpp<2>        |    2.856|         |         |         |
+Inpp<3>        |    2.856|         |         |         |
+Inpp<4>        |    2.856|         |         |         |
+Inpp<5>        |    2.856|         |         |         |
+Inpp<6>        |    2.856|         |         |         |
+Inpp<7>        |    2.856|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock Inpp<3>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+Inpp<0>        |    2.856|         |         |         |
+Inpp<1>        |    2.856|         |         |         |
+Inpp<2>        |    2.856|         |         |         |
+Inpp<3>        |    2.856|         |         |         |
+Inpp<4>        |    2.856|         |         |         |
+Inpp<5>        |    2.856|         |         |         |
+Inpp<6>        |    2.856|         |         |         |
+Inpp<7>        |    2.856|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock Inpp<4>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+Inpp<0>        |    2.856|         |         |         |
+Inpp<1>        |    2.856|         |         |         |
+Inpp<2>        |    2.856|         |         |         |
+Inpp<3>        |    2.856|         |         |         |
+Inpp<4>        |    2.856|         |         |         |
+Inpp<5>        |    2.856|         |         |         |
+Inpp<6>        |    2.856|         |         |         |
+Inpp<7>        |    2.856|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock Inpp<5>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+Inpp<0>        |    2.856|         |         |         |
+Inpp<1>        |    2.856|         |         |         |
+Inpp<2>        |    2.856|         |         |         |
+Inpp<3>        |    2.856|         |         |         |
+Inpp<4>        |    2.856|         |         |         |
+Inpp<5>        |    2.856|         |         |         |
+Inpp<6>        |    2.856|         |         |         |
+Inpp<7>        |    2.856|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock Inpp<6>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+Inpp<0>        |    2.856|         |         |         |
+Inpp<1>        |    2.856|         |         |         |
+Inpp<2>        |    2.856|         |         |         |
+Inpp<3>        |    2.856|         |         |         |
+Inpp<4>        |    2.856|         |         |         |
+Inpp<5>        |    2.856|         |         |         |
+Inpp<6>        |    2.856|         |         |         |
+Inpp<7>        |    2.856|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock Inpp<7>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+Inpp<0>        |    2.856|         |         |         |
+Inpp<1>        |    2.856|         |         |         |
+Inpp<2>        |    2.856|         |         |         |
+Inpp<3>        |    2.856|         |         |         |
+Inpp<4>        |    2.856|         |         |         |
+Inpp<5>        |    2.856|         |         |         |
+Inpp<6>        |    2.856|         |         |         |
+Inpp<7>        |    2.856|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+Inpp<0>        |   14.044|    8.199|         |         |
+Inpp<1>        |   14.044|    8.402|         |         |
+Inpp<2>        |   14.044|    7.938|         |         |
+Inpp<3>        |   14.044|    6.873|         |         |
+Inpp<4>        |   14.044|    6.662|         |         |
+Inpp<5>        |   14.044|    7.269|         |         |
+Inpp<6>        |   14.044|    7.757|         |         |
+Inpp<7>        |   14.044|    7.670|         |         |
+clk            |    6.258|         |         |         |
+---------------+---------+---------+---------+---------+
+
+
+Analysis completed Tue Dec 04 20:32:23 2018 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 243 MB
+
+
+

@@ -1,0 +1,138 @@
+
+****** PlanAhead v14.7
+  **** Build 321239 by xbuild on Fri Sep 27 19:31:35 MDT 2013
+    ** Copyright 1986-1999, 2001-2013 Xilinx, Inc. All Rights Reserved.
+
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+INFO: [Common 17-290] Got license for PlanAhead
+INFO: [Common 17-86] Your PlanAhead license expires in -491 day(s)
+INFO: [Device 21-36] Loading parts and site information from C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+source D:/term_13_ISE/pa.fromHdl.tcl
+# create_project -name term_13_ISE -dir "D:/term_13_ISE/planAhead_run_1" -part xc6slx45fgg484-3
+# set_param project.pinAheadLayout yes
+# set srcset [get_property srcset [current_run -impl]]
+# set_property target_constrs_file "main.ucf" [current_fileset -constrset]
+Adding file 'D:/term_13_ISE/main.ucf' to fileset 'constrs_1'
+# set hdlfile [add_files [list {C:/Program Files/System Centroid/Flowrian R7/Library/PNULib/sources/PNU_OR8.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {C:/Program Files/System Centroid/Flowrian R7/Library/PNULib/sources/PNU_OR2.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {C:/Program Files/System Centroid/Flowrian R7/Library/PNULib/sources/PNU_NOR8.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {C:/Program Files/System Centroid/Flowrian R7/Library/PNULib/sources/PNU_DFF_Ce.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {../term_13/push_cnt.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {../term_13/PNU_CLK_DIV.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {../term_13/EightBitCount.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {C:/Program Files/System Centroid/Flowrian R7/Library/PNULib/sources/PNU_SRAM.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {C:/Program Files/System Centroid/Flowrian R7/Library/PNULib/sources/PNU_NOT.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {C:/Program Files/System Centroid/Flowrian R7/Library/PNULib/sources/PNU_AND3.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {C:/Program Files/System Centroid/Flowrian R7/Library/PNULib/sources/PNU_AND2.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {../term_13/record.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {../term_13/main.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set_property top main $srcset
+# add_files [list {main.ucf}] -fileset [get_property constrset [current_run]]
+# open_rtl_design -part xc6slx45fgg484-3
+Using Verific elaboration
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/lib/synplify/synattr.vhd" into library synplify
+Analyzing Verilog file "C:/Program Files/System Centroid/Flowrian R7/Library/PNULib/sources/PNU_OR8.v" into library work
+Analyzing Verilog file "C:/Program Files/System Centroid/Flowrian R7/Library/PNULib/sources/PNU_OR2.v" into library work
+Analyzing Verilog file "C:/Program Files/System Centroid/Flowrian R7/Library/PNULib/sources/PNU_NOR8.v" into library work
+Analyzing Verilog file "C:/Program Files/System Centroid/Flowrian R7/Library/PNULib/sources/PNU_DFF_Ce.v" into library work
+Analyzing Verilog file "D:/term_13/push_cnt.v" into library work
+Analyzing Verilog file "D:/term_13/PNU_CLK_DIV.v" into library work
+Analyzing Verilog file "D:/term_13/EightBitCount.v" into library work
+Analyzing Verilog file "C:/Program Files/System Centroid/Flowrian R7/Library/PNULib/sources/PNU_SRAM.v" into library work
+Analyzing Verilog file "C:/Program Files/System Centroid/Flowrian R7/Library/PNULib/sources/PNU_NOT.v" into library work
+Analyzing Verilog file "C:/Program Files/System Centroid/Flowrian R7/Library/PNULib/sources/PNU_AND3.v" into library work
+Analyzing Verilog file "C:/Program Files/System Centroid/Flowrian R7/Library/PNULib/sources/PNU_AND2.v" into library work
+Analyzing Verilog file "D:/term_13/record.v" into library work
+Analyzing Verilog file "D:/term_13/main.v" into library work
+Loading clock regions from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx45/ClockRegion.xml
+Loading clock buffers from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx45/ClockBuffers.xml
+Loading package pin functions from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/PinFunctions.xml...
+Loading package from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx45/fgg484/Package.xml
+Loading io standards from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan6/IOStandards.xml
+Loading device configuration modes from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/ConfigModes.xml
+Loading list of drcs for the architecture : C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan6/drc.xml
+Parsing UCF File [D:/term_13_ISE/main.ucf]
+Finished Parsing UCF File [D:/term_13_ISE/main.ucf]
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Phase 0 | Netlist Checksum: f3759947
+open_rtl_design: Time (s): elapsed = 00:00:07 . Memory (MB): peak = 521.527 ; gain = 120.961
+update_compile_order -fileset sim_1
+set_property package_pin "" [get_ports [list  {Inpp[7]}]]
+startgroup
+set_property package_pin K2 [get_ports {Inpp[0]}]
+endgroup
+startgroup
+set_property package_pin M3 [get_ports {Inpp[1]}]
+endgroup
+startgroup
+set_property package_pin K4 [get_ports {Inpp[7]}]
+endgroup
+startgroup
+set_property package_pin L3 [get_ports {Inpp[6]}]
+endgroup
+startgroup
+set_property package_pin M2 [get_ports {Inpp[5]}]
+endgroup
+startgroup
+set_property package_pin N1 [get_ports {Inpp[4]}]
+endgroup
+startgroup
+set_property package_pin N3 [get_ports {Inpp[3]}]
+endgroup
+startgroup
+set_property package_pin M1 [get_ports {Inpp[2]}]
+endgroup
+startgroup
+set_property package_pin AB16 [get_ports clk]
+endgroup
+startgroup
+set_property package_pin W15 [get_ports Piezo]
+endgroup
+startgroup
+set_property package_pin Y2 [get_ports RegistOne]
+endgroup
+startgroup
+set_property package_pin U4 [get_ports RegistTwo]
+endgroup
+startgroup
+set_property package_pin T4 [get_ports rst]
+endgroup
+startgroup
+set_property package_pin V1 [get_ports RW]
+endgroup
+save_constraints
+exit
+ERROR: [Common 17-39] 'stop_gui' failed due to earlier errors.
+INFO: [Common 17-206] Exiting PlanAhead at Tue Dec 04 19:58:05 2018...
+INFO: [Common 17-83] Releasing license: PlanAhead

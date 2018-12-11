@@ -1,0 +1,999 @@
+Release 14.7 - xst P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.29 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.29 secs
+ 
+--> Reading design: main.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "main.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "main"
+Output Format                      : NGC
+Target Device                      : xc6slx45-3-fgg484
+
+---- Source Options
+Top Module Name                    : main
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "C:/Program Files/System Centroid/Flowrian R7/Library/PNULib/sources/PNU_OR8.v" into library work
+Parsing module <PNU_OR8>.
+Analyzing Verilog file "C:/Program Files/System Centroid/Flowrian R7/Library/PNULib/sources/PNU_OR2.v" into library work
+Parsing module <PNU_OR2>.
+Analyzing Verilog file "C:/Program Files/System Centroid/Flowrian R7/Library/PNULib/sources/PNU_NOR8.v" into library work
+Parsing module <PNU_NOR8>.
+Analyzing Verilog file "C:/Program Files/System Centroid/Flowrian R7/Library/PNULib/sources/PNU_DFF_Ce.v" into library work
+Parsing module <PNU_DFF_Ce>.
+Analyzing Verilog file "D:\term_13\push_cnt.v" into library work
+Parsing module <push_cnt>.
+Analyzing Verilog file "D:\term_13\PNU_CLK_DIV.v" into library work
+Parsing module <PNU_CLK_DIV>.
+Analyzing Verilog file "D:\term_13\EightBitCount.v" into library work
+Parsing module <EightBitCount>.
+Analyzing Verilog file "C:/Program Files/System Centroid/Flowrian R7/Library/PNULib/sources/PNU_SRAM.v" into library work
+Parsing module <PNU_SRAM>.
+Analyzing Verilog file "C:/Program Files/System Centroid/Flowrian R7/Library/PNULib/sources/PNU_NOT.v" into library work
+Parsing module <PNU_NOT>.
+Analyzing Verilog file "C:/Program Files/System Centroid/Flowrian R7/Library/PNULib/sources/PNU_AND3.v" into library work
+Parsing module <PNU_AND3>.
+Analyzing Verilog file "C:/Program Files/System Centroid/Flowrian R7/Library/PNULib/sources/PNU_AND2.v" into library work
+Parsing module <PNU_AND2>.
+Analyzing Verilog file "D:\term_13\record.v" into library work
+Parsing module <record>.
+Analyzing Verilog file "D:\term_13\main.v" into library work
+Parsing module <main>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+WARNING:HDLCompiler:1016 - "D:\term_13\main.v" Line 35: Port record is not connected to this instance
+
+Elaborating module <main>.
+
+Elaborating module <PNU_OR2>.
+
+Elaborating module <record>.
+
+Elaborating module <PNU_CLK_DIV(cnt_num=3405)>.
+WARNING:HDLCompiler:413 - "D:\term_13\PNU_CLK_DIV.v" Line 26: Result of 21-bit expression is truncated to fit in 20-bit target.
+
+Elaborating module <PNU_CLK_DIV(cnt_num=3034)>.
+WARNING:HDLCompiler:413 - "D:\term_13\PNU_CLK_DIV.v" Line 26: Result of 21-bit expression is truncated to fit in 20-bit target.
+
+Elaborating module <PNU_CLK_DIV(cnt_num=2863)>.
+WARNING:HDLCompiler:413 - "D:\term_13\PNU_CLK_DIV.v" Line 26: Result of 21-bit expression is truncated to fit in 20-bit target.
+
+Elaborating module <PNU_CLK_DIV(cnt_num=2551)>.
+WARNING:HDLCompiler:413 - "D:\term_13\PNU_CLK_DIV.v" Line 26: Result of 21-bit expression is truncated to fit in 20-bit target.
+
+Elaborating module <PNU_CLK_DIV(cnt_num=2272)>.
+WARNING:HDLCompiler:413 - "D:\term_13\PNU_CLK_DIV.v" Line 26: Result of 21-bit expression is truncated to fit in 20-bit target.
+
+Elaborating module <PNU_CLK_DIV(cnt_num=2024)>.
+WARNING:HDLCompiler:413 - "D:\term_13\PNU_CLK_DIV.v" Line 26: Result of 21-bit expression is truncated to fit in 20-bit target.
+
+Elaborating module <PNU_CLK_DIV(cnt_num=1911)>.
+WARNING:HDLCompiler:413 - "D:\term_13\PNU_CLK_DIV.v" Line 26: Result of 21-bit expression is truncated to fit in 20-bit target.
+
+Elaborating module <PNU_AND2>.
+
+Elaborating module <PNU_NOT>.
+
+Elaborating module <PNU_CLK_DIV(cnt_num=3822)>.
+WARNING:HDLCompiler:413 - "D:\term_13\PNU_CLK_DIV.v" Line 26: Result of 21-bit expression is truncated to fit in 20-bit target.
+
+Elaborating module <PNU_OR8>.
+
+Elaborating module <PNU_AND3>.
+
+Elaborating module <EightBitCount>.
+
+Elaborating module <PNU_DFF_Ce>.
+
+Elaborating module <PNU_NOR8>.
+
+Elaborating module <PNU_CLK_DIV(cnt_num=500000)>.
+WARNING:HDLCompiler:413 - "D:\term_13\PNU_CLK_DIV.v" Line 26: Result of 21-bit expression is truncated to fit in 20-bit target.
+
+Elaborating module <push_cnt>.
+
+Elaborating module <PNU_SRAM(Addr_Width=8,RAM_Width=8)>.
+WARNING:HDLCompiler:552 - "D:\term_13\main.v" Line 36: Input port nonerst is not connected on this instance
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <main>.
+    Related source file is "D:\term_13\main.v".
+WARNING:Xst:2898 - Port 'nonerst', unconnected in block instance 's2', is tied to GND.
+INFO:Xst:3210 - "D:\term_13\main.v" line 36: Output port <record> of the instance <s2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\term_13\main.v" line 36: Output port <test> of the instance <s2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\term_13\main.v" line 36: Output port <aaa> of the instance <s2> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <main> synthesized.
+
+Synthesizing Unit <PNU_OR2>.
+    Related source file is "C:/Program Files/System Centroid/Flowrian R7/Library/PNULib/sources/PNU_OR2.v".
+    Summary:
+	no macro.
+Unit <PNU_OR2> synthesized.
+
+Synthesizing Unit <record>.
+    Related source file is "D:\term_13\record.v".
+    Summary:
+	no macro.
+Unit <record> synthesized.
+
+Synthesizing Unit <PNU_CLK_DIV_1>.
+    Related source file is "D:\term_13\PNU_CLK_DIV.v".
+        cnt_num = 3405
+    Found 20-bit register for signal <cnt>.
+    Found 1-bit register for signal <buff>.
+    Found 20-bit adder for signal <cnt[19]_GND_4_o_add_1_OUT> created at line 26.
+    Found 20-bit comparator greater for signal <cnt[19]_GND_4_o_LessThan_1_o> created at line 25
+    Found 20-bit comparator lessequal for signal <cnt[19]_GND_4_o_LessThan_5_o> created at line 35
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  21 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+	inferred   2 Multiplexer(s).
+Unit <PNU_CLK_DIV_1> synthesized.
+
+Synthesizing Unit <PNU_CLK_DIV_2>.
+    Related source file is "D:\term_13\PNU_CLK_DIV.v".
+        cnt_num = 3034
+    Found 20-bit register for signal <cnt>.
+    Found 1-bit register for signal <buff>.
+    Found 20-bit adder for signal <cnt[19]_GND_5_o_add_1_OUT> created at line 26.
+    Found 20-bit comparator greater for signal <cnt[19]_GND_5_o_LessThan_1_o> created at line 25
+    Found 20-bit comparator lessequal for signal <cnt[19]_GND_5_o_LessThan_5_o> created at line 35
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  21 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+	inferred   2 Multiplexer(s).
+Unit <PNU_CLK_DIV_2> synthesized.
+
+Synthesizing Unit <PNU_CLK_DIV_3>.
+    Related source file is "D:\term_13\PNU_CLK_DIV.v".
+        cnt_num = 2863
+    Found 20-bit register for signal <cnt>.
+    Found 1-bit register for signal <buff>.
+    Found 20-bit adder for signal <cnt[19]_GND_6_o_add_1_OUT> created at line 26.
+    Found 20-bit comparator greater for signal <cnt[19]_GND_6_o_LessThan_1_o> created at line 25
+    Found 20-bit comparator lessequal for signal <cnt[19]_GND_6_o_LessThan_5_o> created at line 35
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  21 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+	inferred   2 Multiplexer(s).
+Unit <PNU_CLK_DIV_3> synthesized.
+
+Synthesizing Unit <PNU_CLK_DIV_4>.
+    Related source file is "D:\term_13\PNU_CLK_DIV.v".
+        cnt_num = 2551
+    Found 20-bit register for signal <cnt>.
+    Found 1-bit register for signal <buff>.
+    Found 20-bit adder for signal <cnt[19]_GND_7_o_add_1_OUT> created at line 26.
+    Found 20-bit comparator greater for signal <cnt[19]_GND_7_o_LessThan_1_o> created at line 25
+    Found 20-bit comparator lessequal for signal <cnt[19]_GND_7_o_LessThan_5_o> created at line 35
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  21 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+	inferred   2 Multiplexer(s).
+Unit <PNU_CLK_DIV_4> synthesized.
+
+Synthesizing Unit <PNU_CLK_DIV_5>.
+    Related source file is "D:\term_13\PNU_CLK_DIV.v".
+        cnt_num = 2272
+    Found 20-bit register for signal <cnt>.
+    Found 1-bit register for signal <buff>.
+    Found 20-bit adder for signal <cnt[19]_GND_8_o_add_1_OUT> created at line 26.
+    Found 20-bit comparator greater for signal <cnt[19]_GND_8_o_LessThan_1_o> created at line 25
+    Found 20-bit comparator lessequal for signal <cnt[19]_GND_8_o_LessThan_5_o> created at line 35
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  21 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+	inferred   2 Multiplexer(s).
+Unit <PNU_CLK_DIV_5> synthesized.
+
+Synthesizing Unit <PNU_CLK_DIV_6>.
+    Related source file is "D:\term_13\PNU_CLK_DIV.v".
+        cnt_num = 2024
+    Found 20-bit register for signal <cnt>.
+    Found 1-bit register for signal <buff>.
+    Found 20-bit adder for signal <cnt[19]_GND_9_o_add_1_OUT> created at line 26.
+    Found 20-bit comparator greater for signal <cnt[19]_GND_9_o_LessThan_1_o> created at line 25
+    Found 20-bit comparator lessequal for signal <cnt[19]_GND_9_o_LessThan_5_o> created at line 35
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  21 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+	inferred   2 Multiplexer(s).
+Unit <PNU_CLK_DIV_6> synthesized.
+
+Synthesizing Unit <PNU_CLK_DIV_7>.
+    Related source file is "D:\term_13\PNU_CLK_DIV.v".
+        cnt_num = 1911
+    Found 20-bit register for signal <cnt>.
+    Found 1-bit register for signal <buff>.
+    Found 20-bit adder for signal <cnt[19]_GND_10_o_add_1_OUT> created at line 26.
+    Found 20-bit comparator greater for signal <cnt[19]_GND_10_o_LessThan_1_o> created at line 25
+    Found 20-bit comparator lessequal for signal <cnt[19]_GND_10_o_LessThan_5_o> created at line 35
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  21 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+	inferred   2 Multiplexer(s).
+Unit <PNU_CLK_DIV_7> synthesized.
+
+Synthesizing Unit <PNU_AND2>.
+    Related source file is "C:/Program Files/System Centroid/Flowrian R7/Library/PNULib/sources/PNU_AND2.v".
+    Summary:
+	no macro.
+Unit <PNU_AND2> synthesized.
+
+Synthesizing Unit <PNU_NOT>.
+    Related source file is "C:/Program Files/System Centroid/Flowrian R7/Library/PNULib/sources/PNU_NOT.v".
+    Summary:
+	no macro.
+Unit <PNU_NOT> synthesized.
+
+Synthesizing Unit <PNU_CLK_DIV_8>.
+    Related source file is "D:\term_13\PNU_CLK_DIV.v".
+        cnt_num = 3822
+    Found 20-bit register for signal <cnt>.
+    Found 1-bit register for signal <buff>.
+    Found 20-bit adder for signal <cnt[19]_GND_13_o_add_1_OUT> created at line 26.
+    Found 20-bit comparator greater for signal <cnt[19]_GND_13_o_LessThan_1_o> created at line 25
+    Found 20-bit comparator lessequal for signal <cnt[19]_GND_13_o_LessThan_5_o> created at line 35
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  21 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+	inferred   2 Multiplexer(s).
+Unit <PNU_CLK_DIV_8> synthesized.
+
+Synthesizing Unit <PNU_OR8>.
+    Related source file is "C:/Program Files/System Centroid/Flowrian R7/Library/PNULib/sources/PNU_OR8.v".
+    Summary:
+	no macro.
+Unit <PNU_OR8> synthesized.
+
+Synthesizing Unit <PNU_AND3>.
+    Related source file is "C:/Program Files/System Centroid/Flowrian R7/Library/PNULib/sources/PNU_AND3.v".
+    Summary:
+	no macro.
+Unit <PNU_AND3> synthesized.
+
+Synthesizing Unit <EightBitCount>.
+    Related source file is "D:\term_13\EightBitCount.v".
+    Summary:
+	no macro.
+Unit <EightBitCount> synthesized.
+
+Synthesizing Unit <PNU_DFF_Ce>.
+    Related source file is "C:/Program Files/System Centroid/Flowrian R7/Library/PNULib/sources/PNU_DFF_Ce.v".
+    Found 1-bit register for signal <Q>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+Unit <PNU_DFF_Ce> synthesized.
+
+Synthesizing Unit <PNU_NOR8>.
+    Related source file is "C:/Program Files/System Centroid/Flowrian R7/Library/PNULib/sources/PNU_NOR8.v".
+    Summary:
+	no macro.
+Unit <PNU_NOR8> synthesized.
+
+Synthesizing Unit <PNU_CLK_DIV_9>.
+    Related source file is "D:\term_13\PNU_CLK_DIV.v".
+        cnt_num = 500000
+    Found 20-bit register for signal <cnt>.
+    Found 1-bit register for signal <buff>.
+    Found 20-bit adder for signal <cnt[19]_GND_19_o_add_1_OUT> created at line 26.
+    Found 20-bit comparator greater for signal <cnt[19]_GND_19_o_LessThan_1_o> created at line 25
+    Found 20-bit comparator lessequal for signal <cnt[19]_GND_19_o_LessThan_5_o> created at line 35
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  21 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+	inferred   2 Multiplexer(s).
+Unit <PNU_CLK_DIV_9> synthesized.
+
+Synthesizing Unit <push_cnt>.
+    Related source file is "D:\term_13\push_cnt.v".
+    Summary:
+	no macro.
+Unit <push_cnt> synthesized.
+
+Synthesizing Unit <PNU_SRAM>.
+    Related source file is "C:/Program Files/System Centroid/Flowrian R7/Library/PNULib/sources/PNU_SRAM.v".
+        RAM_Width = 8
+        Addr_Width = 8
+    Found 2048-bit register for signal <n0263[2047:0]>.
+    Found 8-bit 256-to-1 multiplexer for signal <Dout> created at line 27.
+    Summary:
+	inferred 2048 D-type flip-flop(s).
+	inferred 257 Multiplexer(s).
+Unit <PNU_SRAM> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 18
+ 20-bit adder                                          : 18
+# Registers                                            : 70
+ 1-bit register                                        : 50
+ 20-bit register                                       : 18
+ 2048-bit register                                     : 2
+# Comparators                                          : 36
+ 20-bit comparator greater                             : 18
+ 20-bit comparator lessequal                           : 18
+# Multiplexers                                         : 550
+ 20-bit 2-to-1 multiplexer                             : 36
+ 8-bit 2-to-1 multiplexer                              : 512
+ 8-bit 256-to-1 multiplexer                            : 2
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 18
+ 20-bit adder                                          : 18
+# Registers                                            : 4506
+ Flip-Flops                                            : 4506
+# Comparators                                          : 36
+ 20-bit comparator greater                             : 18
+ 20-bit comparator lessequal                           : 18
+# Multiplexers                                         : 4148
+ 1-bit 2-to-1 multiplexer                              : 4096
+ 1-bit 256-to-1 multiplexer                            : 16
+ 20-bit 2-to-1 multiplexer                             : 36
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <main> ...
+
+Optimizing unit <record> ...
+
+Optimizing unit <PNU_SRAM> ...
+
+Optimizing unit <EightBitCount> ...
+
+Optimizing unit <PNU_CLK_DIV_9> ...
+
+Optimizing unit <PNU_CLK_DIV_1> ...
+
+Optimizing unit <PNU_CLK_DIV_2> ...
+
+Optimizing unit <PNU_CLK_DIV_3> ...
+
+Optimizing unit <PNU_CLK_DIV_4> ...
+
+Optimizing unit <PNU_CLK_DIV_5> ...
+
+Optimizing unit <PNU_CLK_DIV_6> ...
+
+Optimizing unit <PNU_CLK_DIV_7> ...
+
+Optimizing unit <PNU_CLK_DIV_8> ...
+WARNING:Xst:1710 - FF/Latch <s2/s21/cnt_11> (without init value) has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s2/s21/cnt_12> (without init value) has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s2/s21/cnt_13> (without init value) has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s2/s21/cnt_14> (without init value) has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s2/s21/cnt_15> (without init value) has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s2/s21/cnt_16> (without init value) has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s2/s21/cnt_17> (without init value) has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s2/s21/cnt_18> (without init value) has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s2/s21/cnt_19> (without init value) has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s2/s67/cnt_11> (without init value) has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s2/s67/cnt_12> (without init value) has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s2/s67/cnt_13> (without init value) has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s2/s67/cnt_14> (without init value) has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s2/s67/cnt_15> (without init value) has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s2/s67/cnt_16> (without init value) has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s2/s67/cnt_17> (without init value) has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s2/s66/cnt_18> (without init value) has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s2/s66/cnt_17> (without init value) has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s2/s66/cnt_16> (without init value) has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s2/s66/cnt_15> (without init value) has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s2/s66/cnt_14> (without init value) has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s2/s66/cnt_13> (without init value) has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s2/s66/cnt_12> (without init value) has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s2/s20/cnt_19> (without init value) has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s2/s20/cnt_18> (without init value) has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s2/s20/cnt_17> (without init value) has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s2/s20/cnt_16> (without init value) has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s2/s20/cnt_15> (without init value) has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s2/s20/cnt_14> (without init value) has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s2/s20/cnt_13> (without init value) has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s2/s20/cnt_12> (without init value) has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s2/s67/cnt_19> (without init value) has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s2/s67/cnt_18> (without init value) has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s2/s22/cnt_11> (without init value) has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s2/s100/cnt_19> (without init value) has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s2/s100/cnt_18> (without init value) has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s2/s100/cnt_17> (without init value) has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s2/s100/cnt_16> (without init value) has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s2/s100/cnt_15> (without init value) has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s2/s100/cnt_14> (without init value) has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s2/s100/cnt_13> (without init value) has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s2/s100/cnt_12> (without init value) has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s2/s61/cnt_19> (without init value) has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s2/s61/cnt_18> (without init value) has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s2/s61/cnt_17> (without init value) has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s2/s61/cnt_16> (without init value) has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s2/s61/cnt_15> (without init value) has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s2/s61/cnt_14> (without init value) has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s2/s61/cnt_13> (without init value) has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s2/s61/cnt_12> (without init value) has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s2/s68/cnt_19> (without init value) has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s2/s68/cnt_18> (without init value) has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s2/s68/cnt_17> (without init value) has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s2/s68/cnt_16> (without init value) has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s2/s68/cnt_15> (without init value) has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s2/s68/cnt_14> (without init value) has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s2/s68/cnt_13> (without init value) has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s2/s68/cnt_12> (without init value) has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s2/s68/cnt_11> (without init value) has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s2/s22/cnt_19> (without init value) has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s2/s22/cnt_18> (without init value) has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s2/s22/cnt_17> (without init value) has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s2/s22/cnt_16> (without init value) has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s2/s22/cnt_15> (without init value) has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s2/s22/cnt_14> (without init value) has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s2/s22/cnt_13> (without init value) has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s2/s22/cnt_12> (without init value) has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s2/s17/cnt_13> (without init value) has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s2/s17/cnt_14> (without init value) has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s2/s17/cnt_15> (without init value) has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s2/s17/cnt_16> (without init value) has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s2/s17/cnt_17> (without init value) has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s2/s17/cnt_18> (without init value) has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s2/s17/cnt_19> (without init value) has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s2/s63/cnt_12> (without init value) has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s2/s63/cnt_13> (without init value) has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s2/s63/cnt_14> (without init value) has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s2/s63/cnt_15> (without init value) has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s2/s63/cnt_16> (without init value) has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s2/s63/cnt_17> (without init value) has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s2/s63/cnt_18> (without init value) has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s2/s63/cnt_19> (without init value) has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s2/s16/cnt_12> (without init value) has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s2/s153/cnt_19> (without init value) has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s2/s152/cnt_19> (without init value) has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s2/s62/cnt_19> (without init value) has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s2/s62/cnt_18> (without init value) has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s2/s62/cnt_17> (without init value) has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s2/s62/cnt_16> (without init value) has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s2/s62/cnt_15> (without init value) has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s2/s62/cnt_14> (without init value) has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s2/s62/cnt_13> (without init value) has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s2/s62/cnt_12> (without init value) has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s2/s16/cnt_19> (without init value) has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s2/s16/cnt_18> (without init value) has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s2/s16/cnt_17> (without init value) has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s2/s16/cnt_16> (without init value) has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s2/s16/cnt_15> (without init value) has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s2/s16/cnt_14> (without init value) has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s2/s16/cnt_13> (without init value) has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s2/s65/cnt_19> (without init value) has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s2/s65/cnt_18> (without init value) has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s2/s65/cnt_17> (without init value) has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s2/s65/cnt_16> (without init value) has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s2/s65/cnt_15> (without init value) has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s2/s65/cnt_14> (without init value) has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s2/s65/cnt_13> (without init value) has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s2/s65/cnt_12> (without init value) has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s2/s19/cnt_19> (without init value) has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s2/s19/cnt_18> (without init value) has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s2/s19/cnt_17> (without init value) has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s2/s19/cnt_16> (without init value) has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s2/s19/cnt_15> (without init value) has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s2/s19/cnt_14> (without init value) has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s2/s19/cnt_13> (without init value) has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s2/s19/cnt_12> (without init value) has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s2/s66/cnt_19> (without init value) has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s2/s17/cnt_12> (without init value) has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s2/s64/cnt_19> (without init value) has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s2/s64/cnt_18> (without init value) has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s2/s64/cnt_17> (without init value) has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s2/s64/cnt_16> (without init value) has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s2/s64/cnt_15> (without init value) has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s2/s64/cnt_14> (without init value) has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s2/s64/cnt_13> (without init value) has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s2/s64/cnt_12> (without init value) has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s2/s18/cnt_19> (without init value) has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s2/s18/cnt_18> (without init value) has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s2/s18/cnt_17> (without init value) has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s2/s18/cnt_16> (without init value) has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s2/s18/cnt_15> (without init value) has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s2/s18/cnt_14> (without init value) has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s2/s18/cnt_13> (without init value) has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s2/s18/cnt_12> (without init value) has a constant value of 0 in block <main>. This FF/Latch will be trimmed during the optimization process.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block main, actual ratio is 37.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 4372
+ Flip-Flops                                            : 4372
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : main.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 7543
+#      GND                         : 1
+#      INV                         : 18
+#      LUT1                        : 208
+#      LUT2                        : 7
+#      LUT3                        : 4193
+#      LUT4                        : 69
+#      LUT5                        : 16
+#      LUT6                        : 1780
+#      MUXCY                       : 208
+#      MUXF7                       : 544
+#      MUXF8                       : 272
+#      VCC                         : 1
+#      XORCY                       : 226
+# FlipFlops/Latches                : 4372
+#      FD                          : 204
+#      FDC                         : 40
+#      FDCE                        : 4128
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 13
+#      IBUF                        : 12
+#      OBUF                        : 1
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx45fgg484-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:            4372  out of  54576     8%  
+ Number of Slice LUTs:                 6291  out of  27288    23%  
+    Number used as Logic:              6291  out of  27288    23%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:   6315
+   Number with an unused Flip Flop:    1943  out of   6315    30%  
+   Number with an unused LUT:            24  out of   6315     0%  
+   Number of fully used LUT-FF pairs:  4348  out of   6315    68%  
+   Number of unique control sets:         7
+
+IO Utilization: 
+ Number of IOs:                          14
+ Number of bonded IOBs:                  14  out of    316     4%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+s2/s170/w16(s2/s170/w16:O)         | NONE(*)(s2/s171/s11/Q) | 16    |
+clk                                | BUFGP                  | 4340  |
+s2/s153/buff                       | NONE(s2/s151/s0/Q)     | 8     |
+s2/s152/buff                       | NONE(s2/s102/s0/Q)     | 8     |
+-----------------------------------+------------------------+-------+
+(*) This 1 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 4.599ns (Maximum Frequency: 217.441MHz)
+   Minimum input arrival time before clock: 9.354ns
+   Maximum output required time after clock: 5.891ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 's2/s170/w16'
+  Clock period: 2.520ns (frequency: 396.810MHz)
+  Total number of paths / destination ports: 30 / 16
+-------------------------------------------------------------------------
+Delay:               2.520ns (Levels of Logic = 2)
+  Source:            s2/s171/s13/Q (FF)
+  Destination:       s2/s171/s11/Q (FF)
+  Source Clock:      s2/s170/w16 rising
+  Destination Clock: s2/s170/w16 rising
+
+  Data Path: s2/s171/s13/Q to s2/s171/s11/Q
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             3   0.447   0.879  s2/s171/s13/Q (s2/s171/s13/Q)
+     LUT3:I0->O            1   0.205   0.684  s2/s171/s10/o1_SW0 (N2)
+     LUT6:I4->O            1   0.203   0.000  s2/s171/s10/o1 (s2/s171/w29)
+     FDCE:D                    0.102          s2/s171/s11/Q
+    ----------------------------------------
+    Total                      2.520ns (0.957ns logic, 1.563ns route)
+                                       (38.0% logic, 62.0% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 4.599ns (frequency: 217.441MHz)
+  Total number of paths / destination ports: 56824 / 4340
+-------------------------------------------------------------------------
+Delay:               4.599ns (Levels of Logic = 4)
+  Source:            s2/s153/cnt_12 (FF)
+  Destination:       s2/s153/cnt_18 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: s2/s153/cnt_12 to s2/s153/cnt_18
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              3   0.447   0.898  s2/s153/cnt_12 (s2/s153/cnt_12)
+     LUT4:I0->O            1   0.203   0.684  s2/s153/cnt[19]_GND_19_o_LessThan_1_o31 (s2/s153/cnt[19]_GND_19_o_LessThan_1_o3)
+     LUT6:I4->O            1   0.203   0.580  s2/s153/cnt[19]_GND_19_o_LessThan_1_o33 (s2/s153/cnt[19]_GND_19_o_LessThan_1_o32)
+     LUT6:I5->O           19   0.205   1.072  s2/s153/cnt[19]_GND_19_o_LessThan_1_o34 (s2/s153/cnt[19]_GND_19_o_LessThan_1_o)
+     LUT4:I3->O            1   0.205   0.000  s2/s153/Mmux_GND_19_o_GND_19_o_mux_3_OUT11 (s2/s153/GND_19_o_GND_19_o_mux_3_OUT<0>)
+     FDC:D                     0.102          s2/s153/cnt_0
+    ----------------------------------------
+    Total                      4.599ns (1.365ns logic, 3.234ns route)
+                                       (29.7% logic, 70.3% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 's2/s153/buff'
+  Clock period: 2.520ns (frequency: 396.810MHz)
+  Total number of paths / destination ports: 15 / 8
+-------------------------------------------------------------------------
+Delay:               2.520ns (Levels of Logic = 2)
+  Source:            s2/s151/s2/Q (FF)
+  Destination:       s2/s151/s0/Q (FF)
+  Source Clock:      s2/s153/buff rising
+  Destination Clock: s2/s153/buff rising
+
+  Data Path: s2/s151/s2/Q to s2/s151/s0/Q
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             3   0.447   0.879  s2/s151/s2/Q (s2/s151/s2/Q)
+     LUT3:I0->O            1   0.205   0.684  s2/s151/s9/o1_SW0 (N8)
+     LUT6:I4->O            1   0.203   0.000  s2/s151/s9/o1 (s2/s151/w22)
+     FDCE:D                    0.102          s2/s151/s0/Q
+    ----------------------------------------
+    Total                      2.520ns (0.957ns logic, 1.563ns route)
+                                       (38.0% logic, 62.0% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 's2/s152/buff'
+  Clock period: 2.520ns (frequency: 396.810MHz)
+  Total number of paths / destination ports: 15 / 8
+-------------------------------------------------------------------------
+Delay:               2.520ns (Levels of Logic = 2)
+  Source:            s2/s102/s2/Q (FF)
+  Destination:       s2/s102/s0/Q (FF)
+  Source Clock:      s2/s152/buff rising
+  Destination Clock: s2/s152/buff rising
+
+  Data Path: s2/s102/s2/Q to s2/s102/s0/Q
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             3   0.447   0.879  s2/s102/s2/Q (s2/s102/s2/Q)
+     LUT3:I0->O            1   0.205   0.684  s2/s102/s9/o1_SW0 (N10)
+     LUT6:I4->O            1   0.203   0.000  s2/s102/s9/o1 (s2/s102/w22)
+     FDCE:D                    0.102          s2/s102/s0/Q
+    ----------------------------------------
+    Total                      2.520ns (0.957ns logic, 1.563ns route)
+                                       (38.0% logic, 62.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 's2/s170/w16'
+  Total number of paths / destination ports: 48 / 32
+-------------------------------------------------------------------------
+Offset:              4.619ns (Levels of Logic = 1)
+  Source:            rst (PAD)
+  Destination:       s2/s171/s11/Q (FF)
+  Destination Clock: s2/s170/w16 rising
+
+  Data Path: rst to s2/s171/s11/Q
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O          4168   1.222   2.967  rst_IBUF (rst_IBUF)
+     FDCE:CLR                  0.430          s2/s170/s18/Q
+    ----------------------------------------
+    Total                      4.619ns (1.652ns logic, 2.967ns route)
+                                       (35.8% logic, 64.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 181302 / 12554
+-------------------------------------------------------------------------
+Offset:              9.354ns (Levels of Logic = 5)
+  Source:            RegistOne (PAD)
+  Destination:       s2/s172/RAM_0_1919 (FF)
+  Destination Clock: clk rising
+
+  Data Path: RegistOne to s2/s172/RAM_0_1919
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           131   1.222   2.206  RegistOne_IBUF (RegistOne_IBUF)
+     LUT4:I0->O          131   0.203   2.323  s2/s107/o11 (s2/b196_3)
+     LUT6:I0->O           32   0.203   1.656  s2/s172/Addr[7]_Decoder_0_OUT<104><7>11 (s2/s172/Addr[7]_Decoder_0_OUT<104><7>1)
+     LUT6:I0->O            8   0.203   1.031  s2/s172/Addr[7]_Decoder_0_OUT<239><7>1 (s2/s172/Addr[7]_Decoder_0_OUT<239>)
+     LUT3:I0->O            1   0.205   0.000  s2/s172/mux135111 (s2/s172/RAM[239][7]_Din[7]_mux_17_OUT<7>)
+     FDCE:D                    0.102          s2/s172/RAM_0_1919
+    ----------------------------------------
+    Total                      9.354ns (2.138ns logic, 7.216ns route)
+                                       (22.9% logic, 77.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 's2/s153/buff'
+  Total number of paths / destination ports: 24 / 16
+-------------------------------------------------------------------------
+Offset:              4.619ns (Levels of Logic = 1)
+  Source:            rst (PAD)
+  Destination:       s2/s151/s0/Q (FF)
+  Destination Clock: s2/s153/buff rising
+
+  Data Path: rst to s2/s151/s0/Q
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O          4168   1.222   2.967  rst_IBUF (rst_IBUF)
+     FDCE:CLR                  0.430          s2/s151/s7/Q
+    ----------------------------------------
+    Total                      4.619ns (1.652ns logic, 2.967ns route)
+                                       (35.8% logic, 64.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 's2/s152/buff'
+  Total number of paths / destination ports: 24 / 16
+-------------------------------------------------------------------------
+Offset:              4.619ns (Levels of Logic = 1)
+  Source:            rst (PAD)
+  Destination:       s2/s102/s0/Q (FF)
+  Destination Clock: s2/s152/buff rising
+
+  Data Path: rst to s2/s102/s0/Q
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O          4168   1.222   2.967  rst_IBUF (rst_IBUF)
+     FDCE:CLR                  0.430          s2/s102/s7/Q
+    ----------------------------------------
+    Total                      4.619ns (1.652ns logic, 2.967ns route)
+                                       (35.8% logic, 64.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 16 / 1
+-------------------------------------------------------------------------
+Offset:              5.891ns (Levels of Logic = 3)
+  Source:            s2/s100/buff (FF)
+  Destination:       Piezo (PAD)
+  Source Clock:      clk rising
+
+  Data Path: s2/s100/buff to Piezo
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               1   0.447   0.944  s2/s100/buff (s2/s100/buff)
+     LUT6:I0->O            1   0.203   0.944  s1/o11 (s1/o1)
+     LUT6:I0->O            1   0.203   0.579  s1/o13 (Piezo_OBUF)
+     OBUF:I->O                 2.571          Piezo_OBUF (Piezo)
+    ----------------------------------------
+    Total                      5.891ns (3.424ns logic, 2.467ns route)
+                                       (58.1% logic, 41.9% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    4.599|         |         |         |
+s2/s152/buff   |    7.177|         |         |         |
+s2/s153/buff   |    7.177|         |         |         |
+s2/s170/w16    |    7.279|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock s2/s152/buff
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+s2/s152/buff   |    2.520|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock s2/s153/buff
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+s2/s153/buff   |    2.520|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock s2/s170/w16
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+s2/s170/w16    |    2.520|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 24.00 secs
+Total CPU time to Xst completion: 24.14 secs
+ 
+--> 
+
+Total memory usage is 225800 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  146 (   0 filtered)
+Number of infos    :    4 (   0 filtered)
+
